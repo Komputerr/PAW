@@ -1,0 +1,100 @@
+<!doctype html>
+<html land="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Baza filmów</title>
+        <style>
+            *{
+                margin:0;
+            }
+            header{
+                background-color: darkviolet;
+                display: flex;
+                flex-direction: row;
+                height: 15vh;
+                justify-content: space-around;
+                align-items: center;
+            }
+            footer{
+                background-color: darkviolet;
+                height: 15vh;
+            }
+            img{
+                height: 15vh;
+            }
+            main{
+                height: 40vh;
+                width: 100vw;
+                display: flex;
+            }
+            aside{
+                height: 100vh;
+                width: 50vw;
+            }
+            section{
+                height: 100vh;
+                width: 50vw;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="film.png" alt="klamra filmowa">
+            <h1>BAZA FILMÓW</h1>
+            <div>
+                <select id="sel">
+                    <option value="dramat">Dramat</option>
+                    <option value="horror">Horror</option>
+                    <option value="akcja">Akcja</option>
+                </select>
+                <button id="btn" onclick="action()">Filmy</button>
+            </div>
+            <img src="gwiezdneWojny.jpg" alt="Gwiezdne Wojny">
+        </header>
+        <main>
+            <aside>
+                <h2>Wybrano filmy:</h2>
+                <p id="film"></p>
+            </aside>
+            <section>
+                <h2>Wszystkie filmy:</h2>
+                <ol>
+                    <li>Avatar:Special Edition</li>
+                    <li>Inception</li>
+                    <li>Avatar</li>
+                    <li>To Kill a Tiger</li>
+                    <li>Dune: Part Two</li>
+                    <li>Monster</li>
+                    <li>Oppenheimer</li>
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <h2>Autor: 00000000000</h2>
+            <a href="#">Zapytania do bazy</a>
+            <a href="#">Przejdź do filmy.pl</a>
+        </footer>
+        <script>
+            function action()
+            {
+                let selection = sel.value;
+                let dram = ["Dune: Part Two", "Monster"];
+                let horr = ["Oppenheimer", "To Kill a Tiger", "Inception"];
+                let akcj = ["Avatar:Special Edition", "Avatar"]; 
+                
+                switch(selection)
+                    {
+                        case "dramat":
+                            document.getElementById("film").innerHTML = dram;
+                        break;
+                        case "horror":
+                            document.getElementById("film").innerHTML = horr;
+                        break;
+                        case "akcja":
+                            document.getElementById("film").innerHTML = akcj;
+                        break;
+                    }
+            }
+        </script>
+    </body>
+</html>
