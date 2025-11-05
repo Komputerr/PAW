@@ -1,0 +1,28 @@
+*{
+    margin: 20px;
+    font-family: Tahoma;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 3em;
+}
+img{
+    height: 170px;
+    width: 300px;
+}
+nav{
+    margin: 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
