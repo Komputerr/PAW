@@ -1,0 +1,17 @@
+{
+  "name": "12_11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.0"
+  }
+}
