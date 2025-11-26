@@ -2,8 +2,14 @@ const express = require('express');
 const { PrismaClient } = require('@prisma/client')
 const app = express();
 const prisma = new PrismaClient();
+const {mongoUrl, mongoClient, _createCollection}  = require('mongodb.js');
+
 require('dotenv').config()
 app.use(express.json())
+app.use((req,res,next)=>{
+
+    next();
+})
 
 app.get("/wpis", async (req, res) => {
     try {
