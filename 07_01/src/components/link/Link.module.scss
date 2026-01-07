@@ -1,0 +1,16 @@
+$purpel:#831FF2;
+$darkpurpel:#49009D;
+.Link
+{
+  color:black;
+  border: 3px solid $purpel;
+  border-radius: 5%;
+  background-color: $purpel;
+  padding-inline: 1rem;
+  font-weight: bold;
+  &:hover{
+    background-color: $darkpurpel;
+    border: 3px solid $darkpurpel;
+    color:black;
+  }
+}

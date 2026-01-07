@@ -1,0 +1,14 @@
+$purpel:#831FF2;
+$darkpurpel:#49009D;
+.CategoryList {
+  h1{
+    text-shadow: 2px 2px 4px $purpel;
+  }
+  ul{
+    border: 3px solid $purpel;
+    padding: 1rem 2rem;
+    list-style: none;
+    border-radius: 5%;
+  }
+}
+

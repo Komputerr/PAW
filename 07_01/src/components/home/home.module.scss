@@ -1,0 +1,17 @@
+$purpel:#831FF2;
+.Home {
+  h1{
+    text-shadow: 2px 2px 4px $purpel;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      margin: 0.5rem;
+    }
+  }
+}
