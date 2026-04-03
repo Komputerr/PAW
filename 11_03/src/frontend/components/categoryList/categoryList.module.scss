@@ -1,0 +1,26 @@
+$purpel:#831FF2;
+.CategoryList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  h1{
+    text-shadow: 2px 2px 4px $purpel;
+    padding: 2rem;
+    font-size: 5rem;
+  }
+  ul{
+    border: 3px solid $purpel;
+    padding: 1rem 2rem;
+    border-radius: 5%;
+    width: 20rem;
+    text-align: center;
+    list-style-type: none;
+    li{
+      font-size: 1.5rem;
+    }
+  }
+}
+
